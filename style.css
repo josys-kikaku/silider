@@ -285,6 +285,7 @@ body{
   display:flex;
   justify-content:center;
   margin-top:16px;
+  width:100%;
 }
 
 .dots{
@@ -292,13 +293,18 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
+  flex-wrap:wrap;
   gap:8px;
   padding:8px 14px;
+  max-width:100%;
+  box-sizing:border-box;
+
   background:rgba(255,255,255,.08);
   backdrop-filter:blur(var(--glass-strength,16px));
   -webkit-backdrop-filter:blur(var(--glass-strength,16px));
   border:1px solid rgba(255,255,255,.14);
   border-radius:999px;
+
   box-shadow:
     0 calc(var(--shadow-strength,28) * 0.6px)
     calc(var(--shadow-strength,28) * 1.4px)
@@ -308,6 +314,7 @@ body{
       0,
       calc(var(--shadow-strength,28) / 100)
     );
+
   width:max-content;
 }
 
